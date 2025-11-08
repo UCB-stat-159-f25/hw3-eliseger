@@ -11,13 +11,6 @@ H1_FILE = DATA_DIR / "H-H1_LOSC_4_V2-1126259446-32.hdf5"
 L1_FILE = DATA_DIR / "L-L1_LOSC_4_V2-1126259446-32.hdf5"
 
 def _flex_loaddata(fn, det):
-    """
-    Normalize rl.loaddata output across variants:
-      - (strain, time, dt, utc)
-      - (strain, time, dt)
-      - (strain, time, meta_dict)
-    Returns: (strain, time, dt, utc_or_None)
-    """
     out = rl.loaddata(fn, det)
     if not isinstance(out, (tuple, list)):
         raise AssertionError("loaddata should return a tuple/list")
@@ -42,7 +35,6 @@ def _flex_loaddata(fn, det):
     return strain, time, dt, utc
 
 def test_loaddata_basic_structure():
-    """loaddata returns 1-D arrays with positive dt and consistent time grid."""
     strain, time, dt, _ = _flex_loaddata(H1_FILE, "H1")
     n = len(strain)
     assert n > 0 and len(time) == n
@@ -51,7 +43,6 @@ def test_loaddata_basic_structure():
     assert np.isfinite(est_dt) and abs(est_dt - dt) < 1e-6
 
 def test_sample_rate_consistency_between_detectors():
-    """H1 and L1 for the same event should have identical dt."""
     _, _, dt_H1, _ = _flex_loaddata(H1_FILE, "H1")
     _, _, dt_L1, _ = _flex_loaddata(L1_FILE, "L1")
     assert abs(dt_H1 - dt_L1) < 1e-10

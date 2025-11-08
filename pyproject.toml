@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel", "numpy>=1.22"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ligotools"
+version = "0.1.0"
+description = "Utilities for the STAT 159 LIGO tutorial: read LIGO HDF5, whitening, PSD, audio export, plots."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+  { name = "Ligo Scientific Collaboration (LSC) and Elise Yi Gao" }
+]
+
+dependencies = [
+  "numpy>=1.22",
+  "scipy>=1.9",
+  "matplotlib>=3.6",
+  "h5py>=3.7"
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7.0", "pytest-cov>=4.0"]
+
+[tool.setuptools]
+packages = { find = { include = ["ligotools*"] } }
+
+[tool.setuptools.package-data]
+ligotools = ["*.txt", "*.json", "*.csv"]

@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: ligotools
+Version: 0.1.0
+Summary: Utilities for the STAT 159 LIGO tutorial: read LIGO HDF5, whitening, PSD, audio export, plots.
+Author: Ligo Scientific Collaboration (LSC) and Elise Yi Gao
+License: MIT
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.22
+Requires-Dist: scipy>=1.9
+Requires-Dist: matplotlib>=3.6
+Requires-Dist: h5py>=3.7
+Provides-Extra: test
+Requires-Dist: pytest>=7.0; extra == "test"
+Requires-Dist: pytest-cov>=4.0; extra == "test"
+
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/wOo27OxG)

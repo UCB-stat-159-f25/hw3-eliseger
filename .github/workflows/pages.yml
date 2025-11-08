@@ -15,7 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: npm install -g mystmd
-      - run: myst build --html
+      - run: BASE_URL=/${{ github.event.repository.name }}/ myst build --html
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _build/html

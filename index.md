@@ -6,4 +6,4 @@ https://mybinder.org/v2/gh/UCB-stat-159-f25/hw3-eliseger/main?labpath=LOSC_Event
 
 - Data are in `data/`
 - Figures are saved in `figures/`
-- Audio is saved in `audio/` (figures and audio folders are empty in the repo by design, they are automatically populated when the notebook is executed locally or on Binder.)
+- Audio is saved in `audio/` (The `figures/` and `audio/` directories are included but empty by design, they are automatically populated when the notebook is executed locally or on Binder.)

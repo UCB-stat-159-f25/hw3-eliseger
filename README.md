@@ -1,7 +1,5 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/wOo27OxG)
 
-# STAT 159 Homework 3 – LIGO Analysis
-
 This repository contains the MyST-based version of Homework 3 for STAT 159 (Fall 2025), focusing on binary black hole signals in LIGO open data.
 
 ## 📊 Project Structure

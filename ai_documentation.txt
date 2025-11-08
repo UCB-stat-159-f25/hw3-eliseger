@@ -1,0 +1,18 @@
+## Tools Used
+- ChatGPT (GPT-5, November 2025)
+
+## Purpose of Use
+Understanding how to correctly set up and debug the MyST deployment to GitHub Pages
+
+## Prompts
+
+**Prompt:**  
+> “How do I deploy my MyST site to GitHub Pages, and where should I put the YAML file?”  
+
+**Output Summary:**  
+ChatGPT explained how to create `.github/workflows/deploy.yml`, configure GitHub Actions, and enable Pages under the repo settings. It also helped troubleshoot build errors and verify the live URL.  
+
+
+## Reflection
+ChatGPT was used as a technical assistant for deployment and workflow setup guidance, not for producing or writing any of the project’s analytical content or code logic.  
+All final implementations (ligotools package, tests, utils, notebook) were written and verified by me.

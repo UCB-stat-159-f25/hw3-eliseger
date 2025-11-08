@@ -1,5 +1,3 @@
-# MyST GitHub Pages Deploy (works when Pages is enabled)
-
 name: MyST GitHub Pages Deploy
 on:
   push:

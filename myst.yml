@@ -1,0 +1,9 @@
+version: 1
+project:
+  title: "STAT 159 HW03 – LIGO"
+  toc:
+    entries:
+      - file: index.md
+      - file: LOSC_Event_tutorial.ipynb
+site:
+  template: book-theme
